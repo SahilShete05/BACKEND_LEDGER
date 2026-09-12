@@ -19,6 +19,7 @@ app.use(cookieParser());
 
 app.get("/", (req, res) => {
     console.log("Ledger Service is up and running")
+     res.status(200).send("Ledger Service is up and running");
 })
 
 app.use("/api/auth", authRouter);
